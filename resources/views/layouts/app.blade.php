@@ -5,8 +5,12 @@
         <title>タスクリスト</title>
     </head>
     <body>
+        
+        <div class="container">
+            @include('commons.error_messages')
+        
+        
         {!! link_to_route('tasks.create','新規タスク登録') !!}
-        <div clas="container">
             @yield('content')
         </div>
     </body>
